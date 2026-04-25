@@ -1,12 +1,11 @@
 import { T } from '../data';
 import CardHeader from '../components/CardHeader';
 
-// TODO: replace [your@email.com] with Anja's actual contact email before publishing
 const POLICY = {
   en: [
     {
       title: '1. Data Controller',
-      body: 'Anja Jokić is the controller of the personal data you provide through this booking form. Contact: [your@email.com]',
+      body: 'Anja Jokić is the controller of the personal data you provide through this booking form. Contact: anja.jokic41@gmail.com',
     },
     {
       title: '2. What We Collect',
@@ -30,13 +29,13 @@ const POLICY = {
     },
     {
       title: '7. Contact',
-      body: 'To exercise any of these rights or to ask questions about this policy, contact: [your@email.com]',
+      body: 'To exercise any of these rights or to ask questions about this policy, contact: anja.jokic41@gmail.com',
     },
   ],
   es: [
     {
       title: '1. Responsable del tratamiento',
-      body: 'Anja Jokić es la responsable del tratamiento de los datos personales que proporcionas a través de este formulario de reserva. Contacto: [your@email.com]',
+      body: 'Anja Jokić es la responsable del tratamiento de los datos personales que proporcionas a través de este formulario de reserva. Contacto: anja.jokic41@gmail.com',
     },
     {
       title: '2. Datos que recopilamos',
@@ -60,13 +59,13 @@ const POLICY = {
     },
     {
       title: '7. Contacto',
-      body: 'Para ejercer cualquiera de estos derechos o realizar consultas sobre esta política, contacta: [your@email.com]',
+      body: 'Para ejercer cualquiera de estos derechos o realizar consultas sobre esta política, contacta: anja.jokic41@gmail.com',
     },
   ],
   sr: [
     {
       title: '1. Rukovalac podacima',
-      body: 'Anja Jokić je rukovalac ličnim podacima koje dostavljate putem ovog formulara za rezervaciju. Kontakt: [your@email.com]',
+      body: 'Anja Jokić je rukovalac ličnim podacima koje dostavljate putem ovog formulara za rezervaciju. Kontakt: anja.jokic41@gmail.com',
     },
     {
       title: '2. Koji podaci se prikupljaju',
@@ -90,7 +89,7 @@ const POLICY = {
     },
     {
       title: '7. Kontakt',
-      body: 'Za ostvarivanje bilo kog od ovih prava ili pitanja o ovoj politici, kontaktirajte: [your@email.com]',
+      body: 'Za ostvarivanje bilo kog od ovih prava ili pitanja o ovoj politici, kontaktirajte: anja.jokic41@gmail.com',
     },
   ],
 };
