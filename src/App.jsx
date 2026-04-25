@@ -7,6 +7,7 @@ import DateTimeScreen from './screens/DateTimeScreen';
 import ExpertConfirmScreen from './screens/ExpertConfirmScreen';
 import BookingFormScreen from './screens/BookingFormScreen';
 import SuccessScreen from './screens/SuccessScreen';
+import PrivacyScreen from './screens/PrivacyScreen';
 
 export default function App() {
   const [screen, setScreen] = useState('home');
@@ -53,6 +54,7 @@ export default function App() {
     expertConfirm: <ExpertConfirmScreen {...shared} booking={booking} />,
     bookingForm: <BookingFormScreen {...shared} booking={booking} />,
     success: <SuccessScreen lang={lang} setLang={setLang} booking={booking} goTo={resetAndGoHome} />,
+    privacy: <PrivacyScreen {...shared} />,
   };
 
   return (

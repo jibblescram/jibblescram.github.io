@@ -10,7 +10,8 @@ export default function BookingFormScreen({ goBack, booking, goTo, lang, setLang
   const [email, setEmail] = useState('');
   const [note, setNote] = useState('');
   const [sending, setSending] = useState(false);
-  const valid = name.trim().length > 1 && phone.trim().length > 5;
+  const [privacy, setPrivacy] = useState(false);
+  const valid = name.trim().length > 1 && phone.trim().length > 5 && privacy;
   const ids = booking.services;
   const price = totalPrice(ids, lang);
   const dur = totalDuration(ids);
@@ -91,6 +92,25 @@ export default function BookingFormScreen({ goBack, booking, goTo, lang, setLang
             <label style={labelStyle}>{t.note}</label>
             <textarea style={{ ...inputStyle, resize: 'none', height: 80 }} value={note} onChange={e => setNote(e.target.value)} placeholder={t.notePlaceholder} />
           </div>
+        </div>
+        <div style={{ marginTop: 16, display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+          <input
+            id="privacy-consent"
+            type="checkbox"
+            checked={privacy}
+            onChange={e => setPrivacy(e.target.checked)}
+            style={{ marginTop: 2, flexShrink: 0, accentColor: '#1A1A1A', width: 15, height: 15, cursor: 'pointer' }}
+          />
+          <label htmlFor="privacy-consent" style={{ fontSize: 12, color: '#666', lineHeight: 1.5, cursor: 'pointer' }}>
+            {t.privacyConsent}{' '}
+            <button
+              type="button"
+              onClick={() => goTo('privacy')}
+              style={{ background: 'none', border: 'none', padding: 0, fontSize: 12, color: '#1A1A1A', fontWeight: 600, textDecoration: 'underline', cursor: 'pointer' }}
+            >
+              {t.privacyPolicy}
+            </button>
+          </label>
         </div>
         <div style={{ height: 24 }} />
       </div>
