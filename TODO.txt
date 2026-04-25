@@ -1,0 +1,2 @@
+Configure domain limit: https://dashboard.emailjs.com/admin/account/security
+Disable non-browser API access
