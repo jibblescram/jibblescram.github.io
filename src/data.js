@@ -2,7 +2,7 @@
 
 export const T = {
   es: {
-    subtitle: 'Tutora de idiomas \u00b7 Online y presencial',
+    subtitle: 'Tutora de idiomas \u00b7 Online',
     menuExpert: 'Elegir experto',
     menuDateTime: 'Elegir fecha y hora',
     menuServices: 'Elegir servicios',
@@ -62,7 +62,7 @@ export const T = {
     currency: 'eur',
   },
   en: {
-    subtitle: 'Language Tutor \u00b7 Online & In Person',
+    subtitle: 'Language Tutor \u00b7 Online',
     menuExpert: 'Choose Expert',
     menuDateTime: 'Choose Date & Time',
     menuServices: 'Choose Services',
@@ -122,7 +122,7 @@ export const T = {
     currency: 'eur',
   },
   sr: {
-    subtitle: 'Tutor za jezike \u00b7 Online i u\u017eivo',
+    subtitle: 'Tutor za jezike \u00b7 Online',
     menuExpert: 'Izaberite stru\u010dnjaka',
     menuDateTime: 'Izaberite datum i vreme',
     menuServices: 'Izaberite usluge',
@@ -152,7 +152,7 @@ export const T = {
         { id: 9, name: 'Gramatika' },
         { id: 10, name: 'Vokabular' },
         { id: 11, name: 'Konverzacija' },
-        { id: 12, name: 'Azbuka' },
+        { id: 12, name: 'Abeceda' },
       ]},
     ],
     service: 'usluga',
