@@ -18,7 +18,7 @@ export default function HomeScreen({ goTo, lang, setLang }) {
 
       <div style={{ padding: '44px 24px 28px', textAlign: 'center' }}>
         <div style={{ width: 56, height: 56, borderRadius: '50%', background: '#1A1A1A', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, fontWeight: 800, color: '#fff', margin: '0 auto 16px', letterSpacing: -0.5 }}>AJ</div>
-        <div style={{ fontSize: 22, fontWeight: 800, letterSpacing: -0.5, color: '#1A1A1A' }}>Anja Jokić</div>
+        <div style={{ fontSize: 22, fontWeight: 800, letterSpacing: -0.5, color: '#1A1A1A' }}>English with Anya</div>
         <div style={{ fontSize: 13, color: '#999', marginTop: 4 }}>{t.subtitle}</div>
       </div>
 
