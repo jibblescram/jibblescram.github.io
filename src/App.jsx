@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { fetchSchedule } from './schedule';
+import { T } from './data';
 import HomeScreen from './screens/HomeScreen';
 import ExpertScreen from './screens/ExpertScreen';
 import ServicesScreen from './screens/ServicesScreen';
@@ -59,7 +60,19 @@ export default function App() {
 
   return (
     <div style={{ background: '#fff', borderRadius: 20, boxShadow: '0 4px 40px rgba(0,0,0,0.10)', overflow: 'hidden', display: 'flex', flexDirection: 'column', minHeight: 560 }}>
-      {screens[screen] || screens.home}
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        {screens[screen] || screens.home}
+      </div>
+      {screen !== 'privacy' && (
+        <div style={{ textAlign: 'center', padding: '8px 24px 12px', borderTop: '1px solid #F4F4F4', flexShrink: 0 }}>
+          <button
+            onClick={() => goTo('privacy')}
+            style={{ background: 'none', border: 'none', padding: 0, fontSize: 11, color: '#C8C8C8', cursor: 'pointer', textDecoration: 'underline' }}
+          >
+            {T[lang].privacyPolicy}
+          </button>
+        </div>
+      )}
     </div>
   );
 }
