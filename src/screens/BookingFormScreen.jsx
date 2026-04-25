@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { T, totalPrice, totalDuration, fmtPrice, fmtDur, getServiceNameWithCategory, confirmDateLabel } from '../data';
-import { EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY } from '../emailjs.config';
 import CardHeader from '../components/CardHeader';
 
 export default function BookingFormScreen({ goBack, booking, goTo, lang, setLang }) {
@@ -25,8 +24,8 @@ export default function BookingFormScreen({ goBack, booking, goTo, lang, setLang
 
     try {
       const result = await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           customer_name:  name.trim(),
           customer_phone: phone.trim(),
@@ -37,7 +36,7 @@ export default function BookingFormScreen({ goBack, booking, goTo, lang, setLang
           total_price:    fmtPrice(price, 'en'),
           duration:       fmtDur(dur),
         },
-        { publicKey: EMAILJS_PUBLIC_KEY },
+        { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY },
       );
       console.log('EmailJS success:', result.status, result.text);
       goTo('success');
